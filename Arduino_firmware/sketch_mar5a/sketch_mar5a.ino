@@ -29,8 +29,8 @@ void setup() {
   pinMode(REL, OUTPUT);
   tm_display.setBrightness(0x0f);
   matrix.begin(MATRIX_DIN, MATRIX_CLK, MATRIX_CS, 1); // DIN, CLK, CS, number of 8x8 matrices
-  matrix.rotate(false);
-  matrix.setIntensity(3); // brightness (0 - 15)
+  matrix.rotar(false);
+  matrix.setIntensidad(3); // brightness (0 - 15)
   digitalWrite(REL, 1);
 }
 
@@ -77,8 +77,8 @@ void read_port() {
         tm_display.clear();
         tm_display.showNumberDec(int_data, false); break;
       case 4: // 8x8 MAX7219 matrix
-        matrix.writePhrase(str_data); break;
-        matrix.turnOn(); break;
+        matrix.escribirFrase(str_data); break;
+        matrix.encender(); break;
       case 5: // relay
         digitalWrite(REL, int_data); break;
       case 6: // MOSFET module
