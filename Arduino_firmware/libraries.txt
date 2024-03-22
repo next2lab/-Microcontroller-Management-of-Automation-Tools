@@ -1,0 +1,6 @@
+LiquidCrystal I2C by Frank de Brabander
+TM1637 by Avishay Orpaz
+MatrizLed by Daniel Alvarez
+GyverEncoder by AlexGyver
+
+
